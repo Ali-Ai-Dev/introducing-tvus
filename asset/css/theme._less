@@ -1,0 +1,91 @@
+/////
+@import "base.less";
+@import "color.less";
+@import "font.less";
+@import "icon.less";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: nassim;
+}
+
+.en, .ltr {
+  font-family: 'sans-serif';
+}
+
+html, body {
+  direction: rtl;
+}
+
+body {
+  margin-top: @headerHeight;
+  background-color: #fff;
+  color: #000;
+  font-family: nassim;
+  font-size: 120%;
+  height: 100%;
+}
+
+.bg_color_primary_dark{
+  background-color: @colorPrimaryDark;
+}
+
+.bg_color_primary{
+  background-color: @colorPrimary;
+}
+
+.bg_color_accent{
+  background-color: @colorAccent;
+}
+
+.color_primary_dark{
+  color: @colorPrimaryDark;
+}
+
+.color_primary{
+  color: @colorPrimary;
+
+  &:hover {
+    color: #007700;
+  }
+}
+
+.color_accent{
+  color: @colorAccent;
+}
+
+.color_white{
+  color: #FFF;
+}
+
+.active_primary{
+  cursor:default;
+  background-color: @colorPrimary;
+  color:#FFF !important;
+
+  &:hover{
+    color: #FFF;
+  }
+}
+
+.imgLogo{
+  margin-left: 0.5rem;
+}
+
+.userWrapperInHeader{
+  margin-right: 5rem;
+}
+
+.headerTitle{
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+#loginAndRegisterContainer{
+  margin-top: 7.5rem !important;
+}
+
+.passwordBorderRadius{
+  border-radius: 0.1rem;
+}

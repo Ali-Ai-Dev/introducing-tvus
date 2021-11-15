@@ -1,0 +1,194 @@
+////
+@import "base.less";
+@import "font.less";
+@import "icon.less";
+@import "color.less";
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: @headerHeight;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1.25rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  border-left: 0.1rem solid #ccc;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.sidebar .nav {
+  margin-bottom: 1.25rem;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-right: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+#dashboardMain{
+  margin-right: 16rem;
+}
+
+#uniStateSelector{
+  width: 12rem !important;
+}
+
+#uniCitySelector{
+  width: 12rem !important;
+}
+
+.genderRadio{
+  font-size: 90%;
+}
+
+.customFile .custom-file-control::after {
+  content: "Choose image...";
+}
+
+.deleteContent .custom-file-control::after {
+  content: "";
+}
+
+.customFile .custom-file-control::before {
+  content: "Browse";
+}
+
+/*when a value is selected, this class removes the content */
+.custom-file-control.selected::after {
+  content: "" !important;
+}
+
+#imageContainer{
+  margin-top: 4rem;
+}
+
+.feedbackImages{
+  width: inherit;
+  min-width: inherit;
+  max-width: 21.5rem;
+  height: inherit;
+  min-height: inherit;
+  max-height: 25rem;
+
+  line-height: 10rem;
+  text-align: center;
+  align-self: center;
+}
+
+.uniImages{
+  width: inherit;
+  min-width: inherit;
+  max-width: 21.5rem;
+  height: 10rem;
+  min-height: 10rem;
+
+  line-height: 10rem;
+  text-align: center;
+  align-self: center;
+}
+
+.imagesTitle{
+  border-top: 0.1rem solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+#imgUniLogo{
+  width: 10rem;
+  min-width: 10rem;
+  align-self: center;
+}
+
+.latLngInputs{
+  font-family: 'sans-serif';
+}
+
+#searchContainer{
+  width: 45rem;
+  height: 29rem;
+
+  /* Always set the map height explicitly to define the size of the div
+   * element that contains the map. */
+  #map {
+    height: 100%;
+  }
+
+  .controls {
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    height: 29px;
+    margin-left: 17px;
+    margin-top: 10px;
+    outline: none;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+
+  .controls:focus {
+    border-color: #4d90fe;
+  }
+  .title {
+    font-weight: bold;
+  }
+  #infowindow-content {
+    display: none;
+  }
+  #map #infowindow-content {
+    display: inline;
+  }
+}
+
+.popover-title{
+   background: #bc1f1f;
+ }
+
+.popover {
+  background-color: @popupOverBackgroundColor;
+  border-color: #db2727;
+  color: white;
+}
+
+.popover.bs-tether-element-attached-bottom:after, .popover.popover-top:after {
+  border-top-color: @popupOverBackgroundColor;
+}
+
+.popover.bs-tether-element-attached-left:after, .popover.popover-right:after{
+  border-right-color: @popupOverBackgroundColor;
+}
+
+.headerRow th{
+  text-align: right;
+}
+
+.textModalWrapper{
+  background-color: #F3F3F3;
+  color: #414141;
+  border-color: #ADADAD;
+}
